@@ -1,12 +1,21 @@
 def calcular(a, b, c):
-    res = a * b + c
-    return res
-
+    """Realiza la operación a * b + c y devuelve el resultado."""
+    return a * b + c
 def principal():
-    x = 5
-    y = 3
-    z = 7
-    resultado = calcular(x, y, z)
-    print("El resultado es:", resultado)
+    try:
+        # Solicitamos al usuario que ingrese los valores
+        Numero01 = float(input("Introduce el valor de x: "))
+        Numero02 = float(input("Introduce el valor de y: "))
+        Numero03 = float(input("Introduce el valor de z: "))
 
-principal()
+        resultado = calcular(Numero01, Numero02, Numero03)
+
+        print(f"El resultado de {Numero01} * {Numero02} + {Numero03} es: {resultado}")
+
+    except ValueError:
+        print("Por favor, introduce valores numéricos válidos.")
+
+
+# Ejecutamos la función principal
+if __name__ == "__main__":
+    principal()
