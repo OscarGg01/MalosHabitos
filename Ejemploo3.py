@@ -1,9 +1,9 @@
 def calcular_area_rectangulo(ancho, alto):
-    """Calcula el área de un rectángulo dado su ancho y alto."""
+
     return ancho * alto
 
 def calcular_area_triangulo(base, altura):
-    """Calcula el área de un triángulo dado su base y altura."""
+
     return 0.5 * base * altura
 
 def main():
